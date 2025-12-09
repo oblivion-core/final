@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADAVERSE</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="music.css">
+    </head>
+    <body>
+        <!-- the navbar-->
+        <nav class="navbar">
+        <div class="navbar-container">
+        <div class="adaverse-logo">
+        <a href="home.html" class="logo">
+        <span class="logo-accent">⚜</span> ADAVERSE
+        </a>
+       </div>       
+     <a href="login.html" style="text-decoration: none; display: inline-block;">
+     <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, #D4AF37, #8B7355); border: 3px solid #5D4037; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-size: 24px; color: white; text-shadow: 1px 1px 2px #000;">
+        👑
+    </div>
+    </a>
+        </div>
+    </nav>
+     <div class="page-container">
+       <div class="page" id="home" data-page="home">
+        <!-- Hero Section  -->
+            <section class="hero-section">
+                <div class="hero-background"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">ADAVERSE</h1>
+                     <p class="hero-description">Your gateway to academic excellence and professional growth. Discover
+                      courses designed to transform your future.</p>
+                     </div>
+            </section>
+              <!-- Features Section -->
+            <section class="features-section">
+                <h2 class="section-title">what ADAVERSE provides you </h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📘</div>
+                        <h3>100+ Courses</h3>
+                        <p>Explore diverse learning paths</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Certifications</h3>
+                        <p>Earn recognized credentials</p>
+                    </div>
+                    <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Community</h3>
+                    <p>Learn with peers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                       <h3>Career Ready</h3>
+                       <p>Build real-world skills</p>
+                    </div>
+                </div>
+            </section>
+              <!-- Library Gallery Section -->
+            <section class="gallery-section">
+                <h2 class="section-title">Our Grand Halls of Learning</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="window.location.href='login.html'" style="cursor: pointer;">
+                        <img src="pexels-marco-171529911-12916351.jpg" alt="Ornate Library Entrance with Golden Doors">
+                        <div class="gallery-overlay">
+                            <h3>Academic Courses</h3>
+                            <p>Master fundamental concepts and theoretical knowledge</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="window.location.href='login.html'" style="cursor: pointer;">
+                        <img src="pexels-tima-miroshnichenko-9572540.jpg" alt="Scholars Learning in Library">
+                        <div class="gallery-overlay">
+                            <h3>Professional Courses</h3>
+                            <p>Build practical skills for the modern workplace</p>
+                        </div>
+                    </div> 
+                </div>
+            </section>  
+        </div>
+       </div>
+    </div>   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h4>About ADAVERSE</h4>
+                     <p >
+                  Empowering learners worldwide with quality education, professional
+                 certifications, and a supportive community.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li><a href="#">📍 University of Akli Mohand Oulhadj,<br />Bouira, Algeria</a></li>
+                        <li><a href="#">📞 +213 77 236 0000</a></li>
+                        <li><a href="#">✉️ contact@adaverse.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AdaVerse. Designed & Built by students | University of Akli
+          Mohand Oulhadj</p>
+            </div>
+        </div>
+    </footer> 
+
+    <!-- BOUSLAH-->
+     <!-- Music Button -->
+<div id="musicBtn">🎵</div>
+
+<audio id="backgroundMusic" loop>
+  <source src="1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script src="music.js">
+</script>
+
+    <!-- BOUSLAH-->
+    </body>
+    </html>

@@ -1,0 +1,200 @@
+/* ====== DESIGN TOKENS & ROOT VARIABLES ====== */
+:root {
+  --color-primary: #b8764a;
+  --color-secondary: #d4af37;
+  --color-dark: #2b2b2b;
+  --color-dark-bg: #1f1f1f;
+  --color-cream: #f5e6d3;
+  --color-light: #e8e0d0;
+  --color-accent: #8b4513;
+  --color-gold-light: #e6d4a8;
+  --color-charcoal: #1a1a1a;
+
+  --font-serif: "Georgia", "Garamond", serif;
+  --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  --radius: 0.25rem;
+}
+
+/* ====== GLOBAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-dark-bg);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* ====== AUTH CONTAINER & BACKGROUND ====== */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* changed from calc to full vh */
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-bg) 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.auth-background {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;    
+  height: 100vh;   
+  background: url("pexels-kristof-sass-kovan-64832383-8798231.jpg") center / cover no-repeat;
+  filter: brightness(0.2) sepia(0.2);
+  z-index: -1;    
+}
+
+/* ====== AUTH CARD ====== */
+.auth-card {
+  background: linear-gradient(135deg, rgba(43, 43, 43, 0.98) 0%, rgba(31, 31, 31, 0.98) 100%);
+  border: 3px solid var(--color-secondary);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius); /* was 0, now using variable */
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), 0 0 40px rgba(212, 175, 55, 0.15);
+  position: relative;
+  z-index: 2;
+  animation: scaleIn 0.6s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ====== AUTH HEADER ====== */
+.auth-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.auth-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.auth-subtitle {
+  color: var(--color-light);
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+/* ====== FORM ====== */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.form-group input {
+  background: rgba(31, 31, 31, 0.6);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radius); /* was 0 */
+  padding: var(--spacing-sm);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-gold-light);
+  box-shadow: 0 0 12px rgba(230, 212, 168, 0.4);
+  background: rgba(31, 31, 31, 0.8);
+}
+
+.form-group input::placeholder {
+  color: rgba(245, 230, 211, 0.6);
+}
+
+/* ====== BUTTON ====== */
+.auth-button {
+  background: var(--color-secondary);
+  color: var(--color-dark);
+  border: none;
+  padding: var(--spacing-sm);
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: var(--radius); /* was 0 */
+  margin-top: var(--spacing-sm);
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.auth-button:hover {
+  background: var(--color-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ====== FOOTER ====== */
+.auth-footer {
+  text-align: center;
+  color: var(--color-light);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.auth-footer a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  color: var(--color-gold-light);
+  text-decoration: underline;
+}

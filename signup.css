@@ -24,12 +24,13 @@
   --radius: 0.25rem;
 }
 
-/* ====== GLOBAL STYLES ====== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 html,
 body {
@@ -41,43 +42,54 @@ body {
   line-height: 1.6;
 }
 
-/* ====== AUTH CONTAINER & BACKGROUND ====== */
+
 .auth-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* changed from calc to full vh */
+  min-height: 100vh;
   padding: var(--spacing-lg);
-  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-bg) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-dark) 0%,
+    var(--color-dark-bg) 100%
+  );
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
-
-.auth-background-alt{
-  position: fixed; 
+.auth-background-alt {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;    
-  height: 100vh;   
-  background: url("pexels-tima-miroshnichenko-9572540\ copy.jpg") center / cover no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background: url("pexels-tima-miroshnichenko-9572540\ copy.jpg")
+    center / cover no-repeat;
   filter: brightness(0.2) sepia(0.2);
-  z-index: -1;    
+  z-index: -1;
 }
 
-/* ====== AUTH CARD ====== */
+
 .auth-card {
-  background: linear-gradient(135deg, rgba(43, 43, 43, 0.98) 0%, rgba(31, 31, 31, 0.98) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(43, 43, 43, 0.98) 0%,
+    rgba(31, 31, 31, 0.98) 100%
+  );
   border: 3px solid var(--color-secondary);
   padding: var(--spacing-2xl);
-  border-radius: var(--radius); /* was 0, now using variable */
+  border-radius: var(--radius);
   max-width: 450px;
   width: 100%;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), 0 0 40px rgba(212, 175, 55, 0.15);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(212, 175, 55, 0.15);
   position: relative;
   z-index: 2;
   animation: scaleIn 0.6s ease-out;
 }
+
 
 @keyframes scaleIn {
   from {
@@ -90,7 +102,7 @@ body {
   }
 }
 
-/* ====== AUTH HEADER ====== */
+/* header */
 .auth-header {
   margin-bottom: var(--spacing-lg);
 }
@@ -111,7 +123,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* ====== FORM ====== */
+/* form */
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -132,10 +144,11 @@ body {
   letter-spacing: 1px;
 }
 
+/*inpuut */
 .form-group input {
   background: rgba(31, 31, 31, 0.6);
   border: 2px solid var(--color-secondary);
-  border-radius: var(--radius); /* was 0 */
+  border-radius: var(--radius);
   padding: var(--spacing-sm);
   color: var(--color-cream);
   font-family: var(--font-sans);
@@ -154,7 +167,7 @@ body {
   color: rgba(245, 230, 211, 0.6);
 }
 
-/* ====== BUTTON ====== */
+
 .auth-button {
   background: var(--color-secondary);
   color: var(--color-dark);
@@ -166,7 +179,7 @@ body {
   transition: var(--transition);
   font-weight: bold;
   letter-spacing: 1.5px;
-  border-radius: var(--radius); /* was 0 */
+  border-radius: var(--radius);
   margin-top: var(--spacing-sm);
   text-transform: uppercase;
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
@@ -178,7 +191,7 @@ body {
   box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
-/* ====== FOOTER ====== */
+
 .auth-footer {
   text-align: center;
   color: var(--color-light);

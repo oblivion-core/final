@@ -39,7 +39,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* navber css ya habacha */
 .navbar {
   background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-bg) 100%);
   border-bottom: 3px solid var(--color-secondary);
@@ -86,7 +85,7 @@ body {
     padding: 0 2rem;
 }
 
-/* Modules Section */
+/* modules Section */
 .modules-section {
     margin-bottom: 3rem;
 }
@@ -97,10 +96,9 @@ body {
     gap: 2rem;
 }
 
-/* Module Card */
+/* module Card */
 .module-card {
     background: linear-gradient(#3a1e15);
-    backdrop-filter: blur(10px);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -159,7 +157,7 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Book Tooltip */
+
 .book-tooltip {
     position: absolute;
     background: linear-gradient(135deg, #1a1a1a, #333);
@@ -185,7 +183,7 @@ body {
     opacity: 1;
 }
 
-/* Shelf Separator */
+
 .shelf-separator {
     height: 20px;
     background: linear-gradient(180deg, #8B4513, #A0522D);
@@ -206,9 +204,9 @@ body {
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
 }
 
-/* Footer */
 
-/* Responsive Design */
+
+/* Responsive this design */
 @media (max-width: 1024px) {
     .modules-row {
         grid-template-columns: repeat(2, 1fr);
@@ -331,7 +329,7 @@ body {
 
 
 
-/* ====== FOOTER ====== */
+
 .footer {
   background: var(--color-dark);
   border-top: 3px solid var(--color-secondary);

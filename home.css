@@ -125,12 +125,32 @@ body {
 }
 
 .hero-description {
-  font-size: 1.1rem;
-  color: var(--color-cream);
-  margin-bottom: var(--spacing-xl);
-  line-height: 1.9;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  animation: slideInUp 0.8s ease-out 0.4s both;
+  max-width: 720px;
+  margin: 0 auto var(--spacing-xl);
+
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 248, 235, 0.95);
+
+  text-align: center;
+
+  text-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.55),
+    0 1px 2px rgba(0, 0, 0, 0.35);
+
+  animation: fadeUp 1s ease-out 0.5s both;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 

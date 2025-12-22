@@ -1,8 +1,12 @@
 ADAVERSE is an educational web platform designed to support students and learners
 by providing high-quality academic and professional courses.
 
-some features:
-- Background audio designed to support concentration during  all courses
-- Modern and responsive ui 
-- Clear and intuitive navigation  
+ Some features:
+  - Background audio designed to support concentration during  all courses
+  - modern and responsive ui 
+  - clear and intuitive navigation
+ 
+ To Run the Project
+  1- download or clone the repository to ur local machine  
+  2- open the `index.html` file using a web browser
 

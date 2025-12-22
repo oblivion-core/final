@@ -6,7 +6,7 @@ by providing high-quality academic and professional courses.
   - modern and responsive ui 
   - clear and intuitive navigation
  
- To Run the Project
-  1- download or clone the repository to ur local machine  
-  2- open the `index.html` file using a web browser
+ To Run the project:
+  - download or clone the repository to ur local machine  
+  - open the `index.html` file using a web browser
 
